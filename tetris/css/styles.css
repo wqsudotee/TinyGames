@@ -1,0 +1,143 @@
+html,body{
+	height:100%;
+}
+
+body{
+	background: #373f54;
+	margin:0;
+	padding:0;
+	position: relative;
+	font-family: 'American Typewriter','Marker Felt';
+}
+
+#tetris{
+	left:50%;
+	top:50%;
+	position: absolute;
+	background: #373f54;
+	
+}
+
+#scene{
+	height:100%;
+	position: absolute;
+	background: #CACACC;
+        border: 2px solid #CACACC;
+
+}
+
+#gameOver{
+	height:100%;
+	position: absolute;
+	background:rgba(0,0,0,.75);
+	z-index:999;
+	color:#CACACC;
+	text-align: center;
+	display: none;
+}
+
+#gameOver h1{
+	margin-top:50%;
+}
+
+#gameOver a,#gameOver a:visited{
+	color:#CACACC;
+	text-decoration: none;
+}
+
+#gameOver h3{
+	color:#CACACC;
+}
+
+#side{
+	height:100%;
+	position: absolute;
+	top:0;
+	right:0;
+	text-align: center;
+}
+
+#info{
+	width:120px;
+	margin:0 auto;
+}
+
+#preview{
+	width:80px;
+	height:80px;
+	background: #373f54;
+	margin:10px auto;
+}
+
+#levelInfo{
+	color:#CACACC;
+	font-size:18px;
+	margin:10px 0;
+}
+#level{
+	color:#CACACC;
+	font-size:32px;
+}
+
+#scoreInfo{
+	color:#CACACC;
+	font-size: 18px;
+	margin-top:0;
+}
+
+#score{
+	color:#CACACC;
+	font-family: 'Chalkboard SE';
+}
+
+#rewardInfo{
+	color:#CACACC;
+	font-weight: bold;
+	height:20px;
+}
+
+
+
+
+
+.invisible{
+	visibility: hidden;
+}
+
+.animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+
+@-webkit-keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+@keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.fadeOutUp {
+  -webkit-animation-name: fadeOutUp;
+  animation-name: fadeOutUp;
+}
